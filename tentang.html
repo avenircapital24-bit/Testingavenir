@@ -2828,6 +2828,84 @@ text-shadow: none;
 /* ═══ SUPABASE CLIENT ═══ */
 const _sb = supabase.createClient('https://wkcqnqtwuxzcjagitkmk.supabase.co', 'sb_publishable_YYtylX5tqzI0Xdy3OrQPgQ_YIXP2zSM');
 </script>
+
+<style>
+/* ── Mobile Fix ── */
+html, body { overflow-x: hidden; max-width: 100vw; }
+
+@media (max-width: 680px) {
+  /* Main card grid */
+  .grid {
+    grid-template-columns: 1fr !important;
+    padding: 12px 14px 48px !important;
+  }
+  /* Home stats bar */
+  .hh-stats {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+  /* Home category grid */
+  .hc-grid {
+    grid-template-columns: repeat(2,1fr) !important;
+  }
+  /* Home how-it-works steps */
+  .hw-steps {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  /* Research page stat grids */
+  .sg4, .sg3 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sg2, .cg2 {
+    grid-template-columns: 1fr !important;
+  }
+  .cg3 {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sc-grid, .dcf-results {
+    grid-template-columns: 1fr !important;
+  }
+  /* Inline grids inside research pages */
+  [style*="repeat(3,1fr)"],
+  [style*="repeat(3, 1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  [style*="repeat(4,1fr)"],
+  [style*="repeat(4, 1fr)"] {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  /* Featured card layout */
+  .hf-card {
+    flex-direction: column !important;
+  }
+  /* General padding fixes */
+  .cnt, .idx-hero, .filter-bar, .hero-inner {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
+  .nav-in {
+    padding: 0 14px !important;
+  }
+  /* Tables stay scrollable */
+  .fin-table, table {
+    font-size: 11px !important;
+  }
+  /* Research daftar grid (minmax 400px) */
+  #page-index .grid,
+  #page-pengguna .grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .hc-grid {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .sg4 {
+    grid-template-columns: 1fr !important;
+  }
+}
+</style>
 </head>
 <body>
 
